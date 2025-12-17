@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Battlefield</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+
+  <link href="assets/img/logow.png" rel="icon">
+
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="index-page">
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
+        <img src="assets/img/logow.png" alt="">
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home<br></a></li>
+          <li><a href="#about">Classes</a></li>
+          <li><a href="#guns">Arsenals</a></li>
+          <li><a href="#Maps">Maps</a></li>
+          <li><a href="#Characters">Characters</a></li>
+       
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="index.html#about">Get Started</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+    <!-- Ghost BG Section -->
+    <section id="hero" class="hero section">
+      <img src="assets/img/bg.jpg" alt="">
+        <video class="smoke-video" autoplay muted loop>
+          <source src="/assets/img/Cool 1 hour smoke Visual loop.mp4" type="video/mp4">
+        </video>
+    </section><!-- /Ghost BG Section -->
+    
+  
+
+    <!-- Class Section -->
+    <section id="about" class="about section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <div class="col-lg-6 order-1 order-lg-2">
+            <img src="assets/img/soldierClass.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 order-2 order-lg-1 content">
+            <h3>SELECT A CLASS</h3>
+            <p>
+              The Specialists of Battlefield 2042 are divided into four distinct Classes: Assault, Engineer, Support, and Recon, each tailored to offer unique strengths and capabilities on the battlefield. 
+              These Classes are designed to provide a balanced and dynamic gameplay experience, allowing players to choose a role that best suits their playstyle and the needs of their team.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Class Section -->
+
+    <!-- Guns Section -->
+    <section id="guns" class="guns section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <h1>Experience New Weapons</h1>
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 2,
+                  "spaceBetween": 40
+                },
+                "480": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 80
+                },
+                "640": {
+                  "slidesPerView": 4,
+                  "spaceBetween": 80
+                },
+                "992": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 120
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="assets/img/guns/goldDE.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/guns/ak47.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/guns/awp.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/guns/m4.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/guns/uzi.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/guns/famas.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/guns/mp5.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/guns/thompson.png" class="img-fluid" alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div><!-- /Guns Section -->
+
+      <section id="tips" class="tips section">
+        <div class="container">
+          <div class="row gy-4">
+            <div class="tips-image col-lg-6" data-aos="fade-up" data-aos-delay="100"><img src="assets/img/th.png" alt="" style="height: 50vh; width: 70vh; margin-left: -100px;"></div>
+              <div class="col-lg-6">
+
+                <div class="tips-item d-flex ps-0 ps-lg-3 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="200">
+                  <i class="bi bi-archive flex-shrink-0"></i>
+                    <div>
+                      <h4>Think Quick</h4>
+                        <p>Unleash your combat creativity through a full roster of cutting-edge weapons, vehicles, jets, helis, and all-new equipment inspired by the near-future of 2042.</p>
+                    </div>
+                  </div>
+
+              <div class="tips-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-basket flex-shrink-0"></i>
+                  <div>
+                    <h4>Tips & Tricks</h4>
+                      <p>There's a ton to learn in Battlefield 2042, so make the most of your experience with some handy tips. 
+                    They're full of the intel you need to hone your skills and stay one step ahead of the enemy!</p>
+                </div>
+              </div><!-- End Tips Item-->
+  
+              <div class="tips-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-broadcast flex-shrink-0"></i>
+                  <div>
+                    <h4>General Tips</h4>
+                      <p>Play the Objective: Always focus on capturing and defending objectives to help your team secure victory.</p>
+                </div>
+              </div><!-- End Tips Item-->
+  
+              <div class="tips-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="500">
+                <i class="bi bi-camera-reels flex-shrink-0"></i>
+                  <div>
+                    <h4>Do Whatever it Takes</h4>
+                      <p>Gear up with new hardware, use destruction as your ally, and jump into a battle for ultimate power.</p>
+                </div>
+              </div><!-- End Tips Item-->
+            </div>
+          </div>
+        </div>
+      </section><!-- /tips Section -->
+    </section><!-- /guns Section -->
+
+ 
+    
+    <!-- Maps Section -->
+    <section id="Maps" class="Maps section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Updated Maps</h2>
+        <p>MAPS</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="MapBox position-relative">
+              <div class="stretched-link">
+                  <img src="/assets/img/maps/map1.jpg" alt="" style="width: 40vh; height: 40vh;">
+                <h3>STADIUM</h3>
+              </div>
+              <p>Give it all or nothing in an intense, infantry-only experience. Brought back by popular demand with a revamped, battle-torn look, Stadium is now optimized for existing mode layouts.</p>
+            </div>
+          </div><!-- End Map -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="MapBox position-relative">
+              <div class="stretched-link">
+                  <img src="/assets/img/maps/map2.jpg" alt="" style="width: 40vh; height: 40vh;">
+                <h3>REDACTED</h3>
+              </div>
+              <p>Discover a secret underground Scottish facility, dripping with tension and close quarters mayhem.</p>
+            </div>
+          </div><!-- End Map -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="MapBox position-relative">
+              <div class="stretched-link">
+                  <img src="/assets/img/maps/map3.jpg" alt="" style="width: 40vh; height: 40vh;">
+                <h3>RECLAIMED</h3>
+              </div>
+              <p>Prepare to deploy in Czechia around an abandoned industrial facility, slowly being reclaimed by nature.</p>
+            </div>
+          </div><!-- End Map -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="MapBox position-relative">
+              <div class="stretched-link">
+                  <img src="/assets/img/maps/map4.jpg" alt="" style="width: 40vh; height: 40vh;">
+                <h3>FLASHPOINT</h3>
+              </div>
+              <p>Take the fight to South Africa on a map that promises up-close and personal combat.</p>
+            </div>
+          </div><!-- End Map -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="MapBox position-relative">
+              <div class="stretched-link">
+                  <img src="/assets/img/maps/map5.jpg" alt="" style="width: 40vh; height: 40vh;">
+                <h3>SPEARHEAD</h3>
+              </div>
+              <p>Gather the squad and dive into the Swedish wilderness in this CQC-focused map, featuring two fully automated megafactories and an untamed terrain fit for spectacular land and air battles.</p>
+            </div>
+          </div><!-- End Map -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="MapBox position-relative">
+              <div>
+                  <img src="/assets/img/maps/map6.jpg" alt="" style="width: 40vh; height: 40vh;">
+                <h3>STRANDED</h3>
+              </div>
+              <p>Head to Panama and a desert lake drained of water. Fight in and around a beached container ship housing an illicit arms trading center.</p>
+            </div>
+          </div><!-- End Map -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Maps Section -->
+
+    <!-- Call To Action Section -->
+  <section id="call-to-action" class="call-to-action section">
+    <img src="assets/img/longbg.jpg" alt="">
+      <div class="container">
+        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-xl-10">
+            <div class="text-center">
+              <h3>ALL-OUT WARFARE</h3>
+                <p>Conquest and Breakthrough have never looked or played better than in Battlefield 2042. Battle across land, air, and sea in frantic multiplayer fights.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section><!-- /Call To Action Section -->
+
+    <!-- Characters Section -->
+    <section id="Characters" class="Characters section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Added Soldiers</h2>
+        <p>Characters</p>
+      </div><!-- End Section Title -->
+
+       <!-- Character Section -->
+       <div class="video-wrapper">
+        <div class="video-container">
+          <iframe width="1080" height="700" src="https://www.youtube.com/embed/c7nRTF2SowQ?si=3Izomh2gD2grBsD5&amp;start=6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div class="card-container">
+        <div class="card">
+            <img src="/assets/img/Soldiers/soldier2.png" alt="Stadium">
+            <div class="card-title">HENRY BLACKBURN</div>
+            <div class="card-description">
+              Staff Sergeant Henry "Black" Blackburn is a character in Battlefield 3's singleplayer campaign. He is a playable character and the main protagonist of the story.
+            </div>
+        </div>
+        <div class="card">
+            <img src="/assets/img/Soldiers/soldier3.png" alt="Redacted">
+            <div class="card-title">KIMBLE IRISH</div>
+            <div class="card-description">
+              As a child, Irish idolized his uncle. The pair formed a strong bond during the many camping trips in upstate New York where the boy learned important lessons about working hard and doing the right thing, but above all that life should be lived with "No fucking regrets!"
+            </div>
+        </div>
+        <div class="card">
+            <img src="/assets/img/Soldiers/soldier1.png" alt="Reclaimed">
+            <div class="card-title">DANIEL RECKER</div>
+            <div class="card-description">
+              Recker is a Sergeant of Tombstone Squad, a special unit of the United States Marine Corps. He is deployed to multiple regions in the world in an effort to uncover and prevent a rogue Chinese admiral's plans to initiate a conflict between China and the United States.
+            </div>
+        </div>
+        <div class="card">
+            <img src="/assets/img/Soldiers/soldier4.png" alt="Flashpoint">
+            <div class="card-title">DIMITRI MAYAKOVSKY</div>
+            <div class="card-description">
+              Dima is a Russian GRU agent who attempts to stop the People's Liberation and Resistance operatives from detonating a nuclear bomb in the heart of Paris.
+            </div>
+        </div>
+        <div class="card">
+            <img src="/assets/img/Soldiers/soldier5.png" alt="Spearhead">
+            <div class="card-title">PETER MÜLLER</div>
+            <div class="card-description">
+              Peter Mathias Müller is a protagonist featured in the singleplayer war stories My Country Calling and The Last Tiger of Battlefield V. He is a German commander of the Tiger 237.
+            </div>
+        </div>
+        <div class="card">
+            <img src="/assets/img/Soldiers/soldier6.png" alt="Stranded">
+            <div class="card-title">JONATHAN MILLER</div>
+            <div class="card-description">
+              Sergeant Jonathan "Jono" Miller is a playable character in Battlefield 3. He is first seen operating an M1 Abrams tank in Thunder Run.
+            </div>
+        </div>
+    </div>
+</section>
+
+      <!-- Preloader -->
+ 
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"> <img src="/assets/img/arrowup.png" alt="" style="height: 30px;"></a>
+
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
